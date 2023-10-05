@@ -53,7 +53,7 @@ COPY . .
 
 # install dependencies
 RUN pip install -r requirements.txt
-    pip install https://github.com/Dineshkarthik/pyrogram/archive/refs/heads/master.zip
+RUN pip install https://github.com/Dineshkarthik/pyrogram/archive/refs/heads/master.zip
 
 # command to run on container start
 CMD [ "bash", "./run" ]
